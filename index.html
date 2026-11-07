@@ -61,10 +61,10 @@
       <div id="welcome" class="stage active">
         <div class="ornament" aria-hidden="true">✧ ❦ ✧</div>
         <div class="overline">Für zwei Menschen, ein gemeinsames Leben</div>
-        <h1>Ein Weg.<br>Zwei Herzen.</h1>
+        <h1>Zwei Herzen.<br>Ein Weg.</h1>
         <p class="lead">Eure gemeinsame Reise hat begonnen. Vor euch liegen vier kleine Fragen über die Ehe im orthodoxen Glauben. Löst sie gemeinsam.</p>
         <button id="start" class="btn">Unsere Herausforderung beginnen <span aria-hidden="true">→</span></button>
-        <p class="small" style="margin-top:24px">Vier Fragen · Kein Zeitlimit · So viele Versuche wie nötig</p>
+        <p class="small" style="margin-top:24px">Vier Fragen · Kein Zeitlimit</p>
       </div>
       <div id="quiz" class="stage">
         <div class="overline" id="count">Frage 1 von 4</div>
@@ -93,8 +93,8 @@
     const questions = [
       {question:'Wie versteht die russisch-orthodoxe Kirche die Ehe in ihrem tiefsten Sinn?',options:['Vor allem als staatlichen Vertrag','Als heiliges Mysterium, in dem Mann und Frau vor Gott vereint werden','Als familiäre Tradition','Als Fest mit gutem Essen'],correct:1,explanation:'Richtig! Die orthodoxe Ehe ist ein heiliges Mysterium: ein gemeinsamer Lebensweg in Gottes Gegenwart.'},
       {question:'Welches besondere Zeichen gehört zur orthodoxen Trauung und drückt Ehre, Würde und gemeinsame Berufung aus?',options:['Die Hochzeitskronen','Ein Schleier','Ein Ringtausch am Ende der Feier','Eine Kerze, die nur der Priester hält'],correct:0,explanation:'Richtig! Die Krönung ist ein zentraler Teil der orthodoxen Trauung (Венчание). Die Kronen weisen auf Würde, Hingabe und den gemeinsamen geistlichen Weg hin.'},
-      {question:'Was soll ein orthodox-christliches Ehepaar in seinem Alltag besonders gemeinsam pflegen?',options:['Große Familienfeste','Debatten über die himmlischen Zollstationen führen','Gebet, Liebe, Treue und den gemeinsamen Weg zu Gott','Möglichst viele Reisen'],correct:2,explanation:'Richtig! Die Ehe ist auch ein gemeinsamer geistlicher Weg, auf dem sich beide in Glauben und Liebe unterstützen.'},
-      {question:'Wer ist das Vorbild von orthodoxen Eheleuten für die Liebe, die die Ehepartner einander geben sollten?', options:['Adam\'s Liebe zu Eva', 'Angelina Jolie\'s Liebe zu Brad Pitt', 'Christi Liebe für seine Kirche', 'Liebe ist nicht real'], correct:2, explanation:'Richtig! Das Geheimnis der Vereinigung von Mann und Frau in der Ehe ist auf das Geheimnis der Vereinigung Christi mit der Kirche zurückzuführen, was er durch sein Leben und sein Leid am Kreuz vollbracht hat.'}
+      {question:'Was soll ein orthodox-christliches Ehepaar in seinem Alltag gemeinsam besonders pflegen?',options:['Große Familienfeste','Debatten über die himmlischen Zollstationen führen','Gebet, Liebe, Treue und den gemeinsamen Weg zu Gott','Möglichst viele Reisen'],correct:2,explanation:'Richtig! Die Ehe ist auch ein gemeinsamer geistlicher Weg, auf dem sich beide in Glauben und Liebe unterstützen.'},
+      {question:'Wer ist das Vorbild von orthodoxen Eheleuten für die Liebe, die die Ehepartner einander geben sollten?', options:['Adam\'s Liebe zu Eva', 'Angelina Jolie\'s Liebe zu Brad Pitt', 'Christi Liebe zu seiner Kirche', 'Liebe ist nicht real'], correct:2, explanation:'Richtig! Das Geheimnis der Vereinigung von Mann und Frau in der Ehe ist auf das Geheimnis der Vereinigung Christi mit der Kirche zurückzuführen, was er durch sein Leben und sein Leid am Kreuz vollbracht hat.'}
     ];
     let current=0,answered=false;
     const $=id=>document.getElementById(id);
